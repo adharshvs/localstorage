@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Webpage Signup</title>
+    <script type="text/javascript" language="javascript" src="signup.js"></script>
+    <script type="text/javascript" language="javascript" src="login.js"></script> 
+    <style>         
+        #vid {
+            position: fixed;
+            right: 0; 
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto; 
+            height: auto;
+            z-index: -100;
+        }    
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id = "vid">
+        <source src="buck.mp4" type="video/mp4">
+    </video>
+    <h1>Signup</h1>    
+        <form id = "signup">
+            <label for = "nm">Name</label>
+            <input type = "text" placeholder="Enter Name" id = "nm"></br></br>
+            <label for = "uname">Username</label>
+            <input type = "text" placeholder="Enter Username" id = "uname"></br></br>
+            <label for = "email">Email</label>
+            <input type = "email" placeholder="Enter Email" id = "email"></br></br>
+            <label for = "bday">Birthday</label>
+            <input type = "date" id = "bday"></br></br>
+            <label for = "phone">Phone number</label>
+            <input type = "tel" id = "phone"></br></br>
+            <label for = "gender">Gender:</label>
+            <label for = "male">Male</label>
+            <input type = "radio" name = "gender" id = "male" value = "Male">
+            <label for = "female">Female</label>
+            <input type = "radio" name = "gender" id = "female" value = "Female"></br></br>
+            <label for = "pass">Password</label>
+            <input type = "password" placeholder="Enter Password" id = "pass"></br></br>            
+            <input type="button" onClick="signup()" value = "Signup"/>            
+        </form></br>
+        <form action="login.html">
+                <input type="submit" value="Login"/>
+        </form>                  
+</body>
+</html>
