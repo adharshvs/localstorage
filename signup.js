@@ -5,7 +5,7 @@ function signup() {
     var uname = document.getElementById('uname').value;    
     var pass = document.getElementById('pass').value;  
 
-    if(!users) {
+    if(users) {
         users = JSON.parse(localStorage.getItem("users"));
     }
     
