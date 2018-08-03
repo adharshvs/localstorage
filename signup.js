@@ -1,13 +1,7 @@
-var users = {}; 
-
-
 function signup() {    
+    var users = JSON.parse(localStorage.getItem("users")); 
     var uname = document.getElementById('uname').value;    
-    var pass = document.getElementById('pass').value;  
-
-    if(users) {
-        users = JSON.parse(localStorage.getItem("users"));
-    }
+    var pass = document.getElementById('pass').value;     
     
     users = Object.assign(users, {[uname]: pass});
     
